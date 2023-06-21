@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media Types Example</title>
+  <style>
+    /* CSS styles for all devices */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      background-color: pink;
+    }
+    
+    /* CSS styles for screens with a maximum width of 600 pixels -Minimize the screen to see this effect*/
+    @media screen and (max-width: 600px) {
+      body {
+        font-size: 14px;
+        background-color: lightblue;
+        font-family:Verdana;
+      }
+      
+      h1 {
+        color: red;
+      }
+    }
+    
+    /* CSS styles for print media -Print the page to see this effect*/
+    @media print {
+      body {
+        font-size: 12px;
+       
+        background-color: white;
+      }
+      
+      h1 {
+      font-family:Magneto;
+        color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Types Example</h1>
+  <p>This is an example demonstrating the usage of media types in CSS. Print the page to see the effect.</p>
+</body>
+</html>
