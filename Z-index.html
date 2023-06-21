@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Z-Index Example</title>
+  <style>
+    /* CSS styles */
+    .container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background-color: lightgray;
+    }
+    
+    .box {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 200px;
+      height: 100px;
+      background-color: red;
+      z-index: 1;
+    }
+    .box:hover{
+          z-index:2;
+   }
+    .overlay {
+      position: absolute;
+      top: 75px;
+      left: 75px;
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      z-index: 2;
+    }
+   .overlay{
+      z-index:1;
+  }
+ p{
+     font-family:Verdana;
+      font-size:25px;
+       color:orange;
+}
+  </style>
+</head>
+<body>
+  <div class="container">This block is relative positioned</div>
+    <div class="box">Absolute positioned with z-index:1</div>
+    <div class="overlay">Absolute positioned with z-index:2</div>
+  <p>Move over the blocks to swap the z-index values</p>
+</body>
+</html>
