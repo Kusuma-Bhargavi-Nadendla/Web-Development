@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Model Example</title>
+  <style>
+    /* CSS styles */
+    .box {
+      width: 200px;
+      height: 150px;
+      padding: 20px;
+      border: 2px dashed red;
+      margin: 40px;
+    }
+    .smallbox{
+       position:relative;
+       left:350px;
+       bottom:120px;
+        width:75px;
+        height:50px;
+        padding:20px;
+       border:2px solid blue;
+       margin:40px;
+  }
+.bigbox{
+       position:absolute;
+       left:550px;
+       top:0px;
+        width:400px;
+        height:350px;
+        padding:20px;
+       border:5px solid black;
+       margin:40px;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>Content in Block</p>
+  </div>
+<div class="smallbox">
+    <p>Content in Smallbox</p>
+ </div>
+<div class="bigbox">
+    <p>Content in Bigbox</p>
+ </div>
+</body>
+</html>
