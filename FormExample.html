@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title >Form Example with different types of fields</title>
+<h1 allign="centre">SUBMIT FORM </h1>
+</head>
+<body>
+<form action="#submitlink">
+
+<label>NAME </label><br/><br/>
+<input type="text" name="Enter name" placeholder="Your name" required/><br/><br/>
+
+<label>YEAR OF STUDY </label><br/><br/>
+<input type="radio" name="year" value=""/><label>1st Year</label><br/>
+<input type="radio" name="year" value=""/><label>2nd Year</label><br/>
+<input type="radio" name="year" value=""/><label>3rd Year</label><br/>
+<input type="radio" name="year" value=""/><label>4th Year</label><br/><br/>
+
+<label>ROLL NUMBER </label><br/><br/>
+<input type="text" name="Roll no" placeholder="Your number" required/><br/><br/>
+
+<label>EMAIL </label><br/><br/>
+<input type="email" name="email" placeholder="Your valid email" required/><br/><br/>
+
+<label>PASSWORD </label><br/><br/>
+<input type="password" name="pwd" placeholder="password" required/><br/><br/>
+
+<label>MEMBERSHIP(IF ANY)</label><br/><br/>
+<input type="checkbox" name="participant" value="value1"/><label>CLASS REPRESENTATIVE</label><br/>
+<input type="checkbox" name="participant" value="value2"/><label>LADY ADVISORY</label><br/>
+<input type="checkbox" name="participant" value="value3"/><label>EVENT ORGANISING</label><br/>
+<input type="checkbox" name="participant" value="value4"/><label>CODING GROUP</label><br/>
+<input type="checkbox" name="participant" value="value5"/><label>TECH TEAM</label><br/><br/>
+
+<label>CHOOSE FILE FORMAT</label><br/><br/>
+<select>
+    <option selected>pdf</option>
+    <option>txt</option>
+    <option>word</option>
+    <option>jpg</option>
+    <option>zip</option>
+</select><br/><br/>
+
+<label>ADDRESS</label><br/><br/>
+<input type="textarea" rows=4 cols=40/><br/><br/>
+
+<input type="submit" value="SUBMIT" name="submit here"/><br/><br/>
+<input type="reset" value="RESET" name="reset here"/><br/><br/>
+<input type="button" value="HELP" name="for help"/>
+</form>
+  
+</body>
+</html>
