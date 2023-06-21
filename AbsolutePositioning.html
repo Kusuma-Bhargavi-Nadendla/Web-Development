@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Absolute Positioning</title>
+<style>
+div{
+position:absolute;
+left:0px;
+top:0px;
+}
+#box1{
+opacity:1;
+}
+#box1:hover{
+opacity:0;
+}
+#box2{
+opacity:0;
+}
+#box2:hover{
+opacity:1;
+}
+p{
+position:absolute;
+left:0px;
+top:400px;
+color:teal;
+font-weight:bold;
+font-size:30px;
+}
+</style>
+</head>
+
+<body>
+<div id="box1"><img src="google.jpg" alt="google" width=400px height=400px></div>
+<div id="box2"><img src="html.jpg" alt="html" width=400px height=400px></div>
+<p>Initially only first image will be visible and when mouse moves over it second image will be displayed since they both are overlapped with absolute positioning property</p>
+</body>
+</html>
