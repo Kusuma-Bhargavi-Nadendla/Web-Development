@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox and :nth-child Selectors Example</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin-right: 10px;
+    }
+    
+    .item:nth-child(3n) {
+      background-color: lightgreen;
+   <!-- The :nth-child(3n) selector is used to target every third item in the container and apply a different background color. In this case, the items with index 3, 6, 9, etc., will have a lightgreen background color.-->
+    }
+  .item:nth-child(5){
+      background-color:red;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+
+</body>
+</html>

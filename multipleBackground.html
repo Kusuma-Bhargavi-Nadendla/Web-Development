@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Background Images</title>
+  <style>
+    div {
+      padding: 20px;
+      margin: 50px;
+      width: 1000px;
+      height: 500px;
+    }
+    
+    #div1 {
+      background-image: url(google.jpg), url(html.jpg);
+      background-position: top left, bottom right;
+      background-repeat: no-repeat, repeat-x;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div1">See the Background</div>
+</body>
+</html>
